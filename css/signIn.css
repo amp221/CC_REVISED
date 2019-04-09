@@ -9,15 +9,17 @@
 .jumbotron h3 {
 	font-size: 18pt;
 	margin-top: 90px;
+	font-style: italic; 
 }
 .jumbotron p {
 	font-size: 14pt;
 	max-width: 800px;
 	margin: auto;
+	font-style: italic; 
 }
 .wrapper {	
 	margin: 0px;
-	margin-bottom: 80px;	  
+	margin-bottom: 80px;	 
 }
 
 .form-signin {
@@ -33,11 +35,21 @@
 }
 
 .checkbox {
-    font-weight: normal;
+  	font-weight: normal;
 }
 .btn {
-    margin-top: 10px;
+		
+		background: #0469B1;
+		border: unset;
+		border-radius: 3px;
 }
+
+button {
+	margin-top: 10px;
+	max-width: 80px;
+	margin: auto;
+}
+
 .form-control {
 	position: relative;
 	font-size: 16px;

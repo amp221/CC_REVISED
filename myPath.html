@@ -32,7 +32,7 @@
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="home.html">Home</a></li>
-          <li class="active"><a href="myPath.html">My Path</a></li>
+          <li class="current"><a href="myPath.html">My Path</a></li>
           <li><a href="mySchedule.html">My Schedule</a></li>
           <li><a href="myElectives.html">My Electives</a></li>
           <li><a href="signIn.html">Sign Out</a></li>
@@ -52,7 +52,7 @@
   </div>
 
 
-  <div class= "container"> 
+  <div class= "container semesters"> 
     <div class = "row">
 
       <div class= "container col-sm-4"> 
@@ -66,59 +66,81 @@
           <p class="advisor-email">Email: some_guy@uml.edu</p>   
         </div>
       </div>
-    
+      
       <div class = "container col-sm-8">
-        <h2></h2>
-        <div class="panel-group">
-          <div class="panel panel-default">
-            <div class="panel-heading">
-              <h4 class="panel-title"> 
-                <a data-toggle="collapse" href="#collapse1">Fall 2019</a>
-              </h4>
-            </div>
-            <div id="collapse1" class="panel-collapse collapse">
-              <table class = "table">
-                <tr>
-                    <th>Class</th>
-                    <th>Status</th>
-                    <th>Credits</th>
-                </tr>
-                <tr>
-                    <td>Class A</td>
-                    <td>complete</td>
-                    <td>3</td> 
-                </tr>
-                <tr>
-                    <td>Class B</td>
-                    <td>complete</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Class C</td>
-                    <td>complete</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>Class D</td>
-                    <td>complete</td>
-                    <td>3</td>
-                </tr>
-              </table>
-              <div class="panel-footer">
-                <p>insert link to edit and num of credits</p>
+            
+                  <button class="collapsible">Fall 2019</button>
+                  <div class="content">
+                      <table class = "table">
+                          <tr>
+                              <th>Class</th>
+                              <th>Status</th>
+                              <th>Credits</th>
+                          </tr>
+                          <tr>
+                              <td>Class A</td>
+                              <td>complete</td>
+                              <td>3</td> 
+                          </tr>
+                          <tr>
+                              <td>Class B</td>
+                              <td>complete</td>
+                              <td>3</td>
+                          </tr>
+                          <tr>
+                              <td>Class C</td>
+                              <td>complete</td>
+                              <td>3</td>
+                          </tr>
+                          <tr>
+                              <td>Class D</td>
+                              <td>complete</td>
+                              <td>3</td>
+                          </tr>
+                      </table>
+                      <div class="panel-footer">
+                        <form form action="update.html" method="GET" class="update-link"> 
+                          <button class="btn btn-sm btn-primary " type="submit">update</button> 
+                        </form>
+                      </div>
+                  </div>
+            
+                  <button class="collapsible">Spring 2020</button>
+                  <div class="content">
+                  <table class = "table">
+                    <tr>
+                      <th>Class</th>
+                      <th>Status</th>
+                      <th>Credits</th>
+                    </tr>
+                    <tr>
+                      <td>Class A</td>
+                      <td>complete</td>
+                      <td>3</td> 
+                    </tr>
+                    <tr>
+                      <td>Class B</td>
+                      <td>complete</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Class C</td>
+                      <td>complete</td>
+                      <td>3</td>
+                    </tr>
+                    <tr>
+                      <td>Class D</td>
+                      <td>complete</td>
+                      <td>3</td>
+                    </tr>
+                  </table>
+                <div class="panel-footer">
+                  <p>insert link to edit and num of credits</p>
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-        
-        <div class="panel-group">
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h4 class="panel-title"> 
-                  <a data-toggle="collapse" href="#collapse2">Spring 2020</a>
-                </h4>
-              </div>
-              <div id="collapse2" class="panel-collapse collapse">
+           
+              <button class="collapsible">Fall 2020</button>
+              <div class="content">
                 <table class = "table">
                   <tr>
                       <th>Class</th>
@@ -153,17 +175,10 @@
                   <p>insert link to edit and num of credits</p>
                 </div>
               </div>
-            </div>
-          </div>
+           
 
-          <div class="panel-group">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <h4 class="panel-title"> 
-                    <a data-toggle="collapse" href="#collapse3">Fall 2020</a>
-                  </h4>
-                </div>
-                <div id="collapse3" class="panel-collapse collapse">
+              <button class="collapsible">Spring 2021</button>
+              <div class="content">
                   <table class = "table">
                     <tr>
                         <th>Class</th>
@@ -195,17 +210,10 @@
                     <p>insert link to edit and num of credits</p>
                   </div>
                 </div>
-              </div>
-            </div>
 
-            <div class="panel-group">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title"> 
-                      <a data-toggle="collapse" href="#collapse4">Spring 2021</a>
-                    </h4>
-                  </div>
-                  <div id="collapse4" class="panel-collapse collapse">
+
+                <button class="collapsible">Fall 2021</button>
+                <div class="content">
                     <table class = "table">
                       <tr>
                           <th>Class</th>
@@ -237,27 +245,129 @@
                       <p>insert link to edit and num of credits</p>
                     </div>
                   </div>
-                </div>
-            </div>
-      
-      
-      
-      </div>
-
+                  <button class="collapsible">Spring 2022</button>
+                <div class="content">
+                    <table class = "table">
+                      <tr>
+                          <th>Class</th>
+                          <th>Status</th>
+                          <th>Credits</th>
+                      </tr>
+                      <tr>
+                          <td>Class A</td>
+                          <td>required</td>
+                          <td>3</td>
+                      </tr>
+                      <tr>
+                          <td>Class B</td>
+                          <td>required</td>
+                          <td>3</td>
+                      </tr>
+                      <tr>
+                          <td>Class C</td>
+                          <td>required</td>
+                          <td>3</td>
+                      </tr>
+                      <tr>
+                          <td>Class D</td>
+                          <td>required</td>
+                          <td>3</td>
+                      </tr>
+                    </table>
+                    <div class="panel-footer">
+                      <p>insert link to edit and num of credits</p>
+                    </div>
+                  </div>
+                  <button class="collapsible">Fall 2022</button>
+                <div class="content">
+                    <table class = "table">
+                      <tr>
+                          <th>Class</th>
+                          <th>Status</th>
+                          <th>Credits</th>
+                      </tr>
+                      <tr>
+                          <td>Class A</td>
+                          <td>required</td>
+                          <td>3</td>
+                      </tr>
+                      <tr>
+                          <td>Class B</td>
+                          <td>required</td>
+                          <td>3</td>
+                      </tr>
+                      <tr>
+                          <td>Class C</td>
+                          <td>required</td>
+                          <td>3</td>
+                      </tr>
+                      <tr>
+                          <td>Class D</td>
+                          <td>required</td>
+                          <td>3</td>
+                      </tr>
+                    </table>
+                    <div class="panel-footer">
+                      <p>insert link to edit and num of credits</p>
+                    </div>
+                  </div>
+                  <button class="collapsible">Spring 2023</button>
+                <div class="content">
+                    <table class = "table">
+                      <tr>
+                          <th>Class</th>
+                          <th>Status</th>
+                          <th>Credits</th>
+                      </tr>
+                      <tr>
+                          <td>Class A</td>
+                          <td>required</td>
+                          <td>3</td>
+                      </tr>
+                      <tr>
+                          <td>Class B</td>
+                          <td>required</td>
+                          <td>3</td>
+                      </tr>
+                      <tr>
+                          <td>Class C</td>
+                          <td>required</td>
+                          <td>3</td>
+                      </tr>
+                      <tr>
+                          <td>Class D</td>
+                          <td>required</td>
+                          <td>3</td>
+                      </tr>
+                    </table>
+                    <div class="panel-footer">
+                      <p>insert link to edit and num of credits</p>
+                    </div>
+                  </div>
+        </div>
     </div>
   </div>
-
-        
-
-          
-
-  
-
-
-
   <footer class="container-fluid text-center">
     <p>&copy; 2019: Charles Gilfeather, Andrea Panaro, Oscar De La Rosa</p>
   </footer>
+
+  <script>
+      var coll = document.getElementsByTagName("button");
+      //var coll = document.getElementsByClassName("collapsible");
+      var i;
+      
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle(".active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight){
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
 
 </body>
 </html>
