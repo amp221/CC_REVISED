@@ -1,8 +1,14 @@
 
-
 button {
     margin: 2px;
     height: 50px;
+}
+
+.update-link {
+    font-weight: bold;
+    color: #0469B1;
+    padding: 5px;
+    border: solid #d3d3d3 1px;
 }
 
 .semesters {
