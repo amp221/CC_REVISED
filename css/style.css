@@ -1,14 +1,15 @@
 body { 
   font-family: 'Open Sans',sans-serif;
   background-color: white;
- 
+
 }
 a {
-  border: unset;
+    border: unset;
 }
 .current a {
   border: solid #0469B1;
 }
+
 .navbar {
   position: fixed;
   top: 0px;
@@ -72,20 +73,7 @@ a {
   height: 80px;
 
 }
-  
-  /*.glyphicon.glyphicon-log-out {
-      margin: 20px;
-      padding-top: 30px;
-      margin: 0%;
-      z-index: +1;
-  }*/
-/*
-  .row.content {
-    position: relative;
-    height: 475px;
-    margin-top: 120px; 
-  }
-  */
+
   footer {
     position: fixed;
     font-weight: lighter;
